@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lados = parseInt(prompt("Digite a quantidade de lados : "))
+        let medida = parseFloat(prompt("Digite a medida de cada lado : "))
+        let resultado
+
+        if (lados == 3){
+            document.write("Estes lados formam um Triangulo <br>")
+            resultado = medida * 3
+            document.write("O seu perimetro é : " + resultado)
+        }
+        else if(lados == 4){
+            document.write("Estes lados formam um Quadrado")
+            document.write("Sua área é de : " + medida * medida)
+        }
+        else if(lados == 5){
+            document.write("Estes lados formam um Pentágono")
+        }
+        else if(lados < 3){
+            document.write("NÃO É UM POLÍGONO")
+        }
+        else{
+            document.write("POLÍGONO NÃO IDENTIFICADO")
+        }
+    </script>
+</body>
+</html>
